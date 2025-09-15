@@ -1,0 +1,19 @@
+baseURL: "/"
+languageCode: "en-us"
+title: "Recovery Toolbox"
+theme: "minimal"
+
+menu:
+  main:
+    - identifier: faqs
+      name: "FAQs"
+      url: "/faqs/"
+      weight: 1
+    - identifier: tools
+      name: "Tools"
+      url: "/tools/"
+      weight: 2
+
+params:
+  sidebarSections:
+    - faqs

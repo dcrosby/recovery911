@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Gpg4Win to Verify Downloads</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+  <div class="nav-left">
+    <span class="site-title">Recovery-911</span>
+  </div>
+  <ul class="nav-right">
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/quickstart/">Quick Start</a></li>
+    
+      <li><a href="/faqs/">FAQs</a></li>
+    
+      <li><a href="/tools/">Tools</a></li>
+    
+      <li><a href="/tutorials/">Tutorials</a></li>
+    
+      <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+  <div class="container">
+    <aside>
+      <aside class="sidebar">
+  <h2>Recovery Guide</h2>
+  <ul>
+    
+      <li>
+        <a href="/quickstart/" class="">
+          Quickstart
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/quickstart/windows_sandbox/" class="">
+          Windows Sandbox
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/faqs/" class="">
+          FAQs
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/faqs/what-is-recovery/" class="">
+          What is Recovery?
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tools/" class="">
+          Recovery Tools
+        </a>
+        <ul>
+  
+
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tutorials/" class="">
+          Tutorials
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/tutorials/safe_downloads/" class="">
+          Safe Downloads - How To
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/notepad&#43;&#43;/" class="">
+          Notepad&#43;&#43; Portable Text Editor
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/gpg4win/" class="">
+          Gpg4Win to Verify Downloads
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/kleopatra_howto/" class="">
+          Kleopatra, The Good, Bad, and Ugly
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/about/" class="">
+          About this Site
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/about/styleguide/" class="">
+          Rescue911 StyleGuide
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+  </ul>
+</aside>
+
+    </aside>
+    <main>
+      
+  <h1>Gpg4Win to Verify Downloads</h1>
+  <p><strong>Goal:</strong> Understand the first level of manually verifying a downloaded file.
+(i.e. the Gpg4win executable).</p>
+<h1 id="-verifying-gpg4win-manually">🔐 Verifying Gpg4win Manually</h1>
+<h2 id="this-doesn"><strong>This doesn&rsquo;t really work - needs a rewrite</strong></h2>
+<h2 id="-why-this-page-exists">📘 Why This Page Exists</h2>
+<p>In the previous guide, we showed how to verify the Gpg4win installer using Windows&rsquo; built-in digital signature check. Now, we’ll go one step deeper and use <strong>Gpg4win itself</strong> to verify its own installer using <strong>GPG signatures</strong>.</p>
+<p>Yes, it’s a bit meta—but it’s also a great way to teach users how GPG verification works in practice.</p>
+<hr>
+<h2 id="-what-youll-need">✅ What You’ll Need</h2>
+<ul>
+<li>The Gpg4win installer (<code>gpg4win-4.4.1.exe</code>)</li>
+<li>The GPG signature file (<code>gpg4win-4.4.1.exe.sig</code>)</li>
+<li>The Gpg4win public key (<code>gpg4win-signing-key.asc</code>)</li>
+<li>Gpg4win installed (includes Kleopatra)</li>
+</ul>
+<p>You can find all of these on the <a href="https://gpg4win.org/thanks-for-download.html">Gpg4win download page</a>.</p>
+<hr>
+<h2 id="-step-by-step-guide">🧭 Step-by-Step Guide</h2>
+<h3 id="1--download-the-files">1. 📥 Download the Files</h3>
+<p>From the official site, download:</p>
+<ul>
+<li>The installer <code>.exe</code></li>
+<li>The <code>.sig</code> signature file</li>
+<li>The public key <code>.asc</code> file</li>
+</ul>
+<p>Place all three files in the same folder (e.g., <code>Downloads\Gpg4winVerify</code>).</p>
+<hr>
+<h3 id="2--import-the-public-key-into-kleopatra">2. 🔑 Import the Public Key into Kleopatra</h3>
+<ol>
+<li>Open <strong>Kleopatra</strong> (installed with Gpg4win).</li>
+<li>Click <strong>File → Import Certificates</strong>.</li>
+<li>Select <code>gpg4win-signing-key.asc</code>.</li>
+<li>You should see a confirmation that the key was imported.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Kleopatra showing successful key import</em></p>
+<hr>
+<h3 id="3--verify-the-installer-signature">3. 🧪 Verify the Installer Signature</h3>
+<ol>
+<li>In Kleopatra, go to <strong>File → Verify/Decrypt</strong>.</li>
+<li>Select the file <code>gpg4win-4.4.1.exe.sig</code>.</li>
+<li>Kleopatra will automatically find the matching <code>.exe</code> file and verify it.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Kleopatra showing “Signature is valid” message</em></p>
+<hr>
+<h2 id="-what-the-result-means">🧠 What the Result Means</h2>
+<ul>
+<li>✅ <strong>“Signature is valid”</strong> means the installer hasn’t been tampered with and matches the signature.</li>
+<li>🔒 You’ve verified the file using cryptographic methods—no guesswork, no blind trust.</li>
+<li>🧑‍💻 This is the same method used by security professionals and open-source developers.</li>
+</ul>
+<hr>
+<h2 id="-for-trainers-and-recovery-kits">🧰 For Trainers and Recovery Kits</h2>
+<p>This guide is ideal for:</p>
+<ul>
+<li>Teaching new users how GPG verification works</li>
+<li>Including in sandbox environments before transferring apps to the host</li>
+<li>Bundling with other recovery tools for secure validation workflows</li>
+</ul>
+<hr>
+<h2 id="-whats-next">🧩 What’s Next?</h2>
+<p>Now that you’ve verified Gpg4win using Gpg4win, you can use it to verify other software like Notepad++, VeraCrypt, or even your own recovery scripts.</p>
+<p>Want to automate this process or add a one-click <code>.bat</code> file for sandbox use? Let me know—I can help build it.</p>
+
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<ul>
+  {{ range sort .Sections "Weight" }}
+    <li>
+      <a href="{{ .RelPermalink }}" class="{{ if eq .RelPermalink $.RelPermalink }}active{{ end }}">
+        {{ .Title }}
+      </a>
+      {{ partial "sidebar-tree.html" . }}
+    </li>
+  {{ end }}
+
+  {{ range sort .Pages "Weight" }}
+    {{ if not .IsSection }}
+      <li>
+        <a href="{{ .RelPermalink }}" class="{{ if eq .RelPermalink $.RelPermalink }}active{{ end }}">
+          {{ .Title }}
+        </a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Kleopatra, The Good, Bad, and Ugly</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+  <div class="nav-left">
+    <span class="site-title">Recovery-911</span>
+  </div>
+  <ul class="nav-right">
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/quickstart/">Quick Start</a></li>
+    
+      <li><a href="/faqs/">FAQs</a></li>
+    
+      <li><a href="/tools/">Tools</a></li>
+    
+      <li><a href="/tutorials/">Tutorials</a></li>
+    
+      <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+  <div class="container">
+    <aside>
+      <aside class="sidebar">
+  <h2>Recovery Guide</h2>
+  <ul>
+    
+      <li>
+        <a href="/quickstart/" class="">
+          Quickstart
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/quickstart/windows_sandbox/" class="">
+          Windows Sandbox
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/faqs/" class="">
+          FAQs
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/faqs/what-is-recovery/" class="">
+          What is Recovery?
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tools/" class="">
+          Recovery Tools
+        </a>
+        <ul>
+  
+
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tutorials/" class="">
+          Tutorials
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/tutorials/safe_downloads/" class="">
+          Safe Downloads - How To
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/notepad&#43;&#43;/" class="">
+          Notepad&#43;&#43; Portable Text Editor
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/gpg4win/" class="">
+          Gpg4Win to Verify Downloads
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/kleopatra_howto/" class="">
+          Kleopatra, The Good, Bad, and Ugly
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/about/" class="">
+          About this Site
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/about/styleguide/" class="">
+          Rescue911 StyleGuide
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+  </ul>
+</aside>
+
+    </aside>
+    <main>
+      
+  <h1>Kleopatra, The Good, Bad, and Ugly</h1>
+  <p>The GPG trust model can be confusing, especially for new users who expect something more like HTTPS or code signing, where a certificate authority (CA) vouches for the software. GPG flips that model: you are the authority, which is empowering but also intimidating if no one explains it clearly.</p>
+<p>This page walks you through creating your own certificate, and shows how to certify a public key like the Notepad++ Public key (nppGpgPub.asc). It covers the “Not Certified” warning in Kleopatra, which can be very confusing. It also explains why this model exists and how it differs from CA-based trust.</p>
+<h2 id="-understanding-kleopatras-not-certified-warning--certifying-keys">🔐 Understanding Kleopatra&rsquo;s “Not Certified” Warning &amp; Certifying Keys</h2>
+<p><strong>📘 What&ndash;Status: Not certified!</strong>
+When you import a public GPG key into Kleopatra (like the Notepad++ key), you’ll likely see this message:</p>
+<blockquote>
+<p><strong>Status: Not certified!</strong></p></blockquote>
+<p>This can feel like a red flag—but it’s actually a normal part of how GPG works. This guide explains what it means, why it happens, and how to handle it properly.</p>
+<hr>
+<h2 id="-what-not-certified-means">🧠 What “Not Certified” Means</h2>
+<p>In GPG, <strong>you are the trust authority</strong>. Unlike HTTPS or code signing, where a certificate authority (CA) vouches for a key, GPG expects <strong>you to verify and certify keys yourself</strong>.</p>
+<p>So when Kleopatra says “Not certified,” it’s just saying:</p>
+<blockquote>
+<p>“You haven’t personally verified this key’s identity yet.”</p></blockquote>
+<p>This doesn’t mean the key is bad—it just means you haven’t told Kleopatra that you trust it.</p>
+<hr>
+<h2 id="-what-youll-learn">✅ What You’ll Learn</h2>
+<ul>
+<li>How to check a key’s fingerprint</li>
+<li>How to create your own certificate (key pair)</li>
+<li>How to certify a public key in Kleopatra</li>
+<li>Why this process matters</li>
+</ul>
+<hr>
+<h2 id="-step-1-check-the-keys-fingerprint">🔽 Step 1: Check the Key’s Fingerprint</h2>
+<ol>
+<li>In Kleopatra, right-click the imported key (e.g., <code>nppGpgPub.asc</code>) and choose <strong>Show Details</strong>.</li>
+<li>Look for the <strong>Fingerprint</strong>—a long string of hexadecimal characters.</li>
+<li>Compare it to the official fingerprint published on the <a href="https://notepad-plus-plus.org/gpg/nppGpgPub.asc">Notepad++ GPG key page</a>.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Kleopatra showing key fingerprint</em></p>
+<p>If the fingerprints match, you can proceed with certification.</p>
+<hr>
+<h2 id="-step-2-create-your-own-certificate-key-pair">🛠 Step 2: Create Your Own Certificate (Key Pair)</h2>
+<p>Before you can certify other keys, you need your own identity in Kleopatra.</p>
+<ol>
+<li>Open Kleopatra.</li>
+<li>Go to <strong>File → New Certificate</strong>.</li>
+<li>Choose <strong>Create a personal OpenPGP key pair</strong>.</li>
+<li>Enter your name and email (can be fake if you&rsquo;re just testing).</li>
+<li>Click <strong>Next</strong>, then <strong>Create Key</strong>.</li>
+<li>Save a backup of your key when prompted.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Certificate creation wizard</em></p>
+<p>Now you have your own certificate, and Kleopatra knows who you are.</p>
+<hr>
+<h2 id="-step-3-certify-the-imported-key">🧾 Step 3: Certify the Imported Key</h2>
+<ol>
+<li>Right-click the imported key (e.g., Notepad++).</li>
+<li>Choose <strong>Certify Certificate</strong>.</li>
+<li>Confirm that you’ve verified the fingerprint.</li>
+<li>Select your own key as the certifier.</li>
+<li>Click <strong>Certify</strong>.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Certification dialog in Kleopatra</em></p>
+<p>Once certified, Kleopatra will show the key as <strong>trusted</strong>.</p>
+<hr>
+<h2 id="-why-this-model-exists">🔒 Why This Model Exists</h2>
+<p>GPG is built for decentralized trust. Instead of relying on a central authority, it lets individuals and communities build their own <strong>web of trust</strong>.</p>
+<p>This is great for:</p>
+<ul>
+<li>Open-source projects</li>
+<li>Secure communication</li>
+<li>Offline verification</li>
+</ul>
+<p>But it can be confusing for first-time users—so this guide is here to help.</p>
+<hr>
+<h2 id="-for-trainers-and-recovery-kits">🧰 For Trainers and Recovery Kits</h2>
+<p>This guide is ideal for:</p>
+<ul>
+<li>Teaching the GPG trust model</li>
+<li>Preparing users to verify software securely</li>
+<li>Including in sandbox environments for safe testing</li>
+</ul>
+<hr>
+<h2 id="-whats-next">🧩 What’s Next?</h2>
+<p>Now that you’ve certified the Notepad++ key, you can use Kleopatra to verify the app’s signature with confidence. In the next lesson, we’ll show how to add verified tools to your Windows Sandbox.</p>
+<p>Need help automating this or bundling it into a training flow? I’ve got your back.</p>
+<p>Let me know if you want to add screenshots, create a printable version, or build a one-click sandbox script to walk users through this. We’re making security human here.</p>
+
+
+    </main>
+  </div>
+</body>
+</html>

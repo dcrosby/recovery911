@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Notepad&#43;&#43; Portable Text Editor</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+  <div class="nav-left">
+    <span class="site-title">Recovery-911</span>
+  </div>
+  <ul class="nav-right">
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/quickstart/">Quick Start</a></li>
+    
+      <li><a href="/faqs/">FAQs</a></li>
+    
+      <li><a href="/tools/">Tools</a></li>
+    
+      <li><a href="/tutorials/">Tutorials</a></li>
+    
+      <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+  <div class="container">
+    <aside>
+      <aside class="sidebar">
+  <h2>Recovery Guide</h2>
+  <ul>
+    
+      <li>
+        <a href="/quickstart/" class="">
+          Quickstart
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/quickstart/windows_sandbox/" class="">
+          Windows Sandbox
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/faqs/" class="">
+          FAQs
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/faqs/what-is-recovery/" class="">
+          What is Recovery?
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tools/" class="">
+          Recovery Tools
+        </a>
+        <ul>
+  
+
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tutorials/" class="">
+          Tutorials
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/tutorials/safe_downloads/" class="">
+          Safe Downloads - How To
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/notepad&#43;&#43;/" class="">
+          Notepad&#43;&#43; Portable Text Editor
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/gpg4win/" class="">
+          Gpg4Win to Verify Downloads
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/kleopatra_howto/" class="">
+          Kleopatra, The Good, Bad, and Ugly
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/about/" class="">
+          About this Site
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/about/styleguide/" class="">
+          Rescue911 StyleGuide
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+  </ul>
+</aside>
+
+    </aside>
+    <main>
+      
+  <h1>Notepad&#43;&#43; Portable Text Editor</h1>
+  <p><strong>Goal</strong>: Safely download the portable text editor Notepad++ (no need to install)
+<strong>🛡️ Verify Software Authenticity</strong> using Gpg4win.exe download</p>
+<p>This procedure walks you through downloading the portable version of Notepad++, retrieving its GPG key and signature, and verifying it using Gpg4win (via Kleopatra). This builds on the previous Gpg4win verification lesson and sets the stage for sandbox deployment.</p>
+<h2 id="-verifying-notepad-portable-with-gpg4win">🧪 Verifying Notepad++ (Portable) with Gpg4win</h2>
+<h3 id="-why-this-matters">📘 Why This Matters</h3>
+<p>Before adding tools like Notepad++ to your Windows Sandbox, it&rsquo;s important to verify their authenticity. This guide shows how to use <strong>Gpg4win</strong> to verify the <strong>portable version of Notepad++</strong>, ensuring it hasn’t been tampered with.</p>
+<p>This is a follow-up to our previous lesson on verifying Gpg4win itself. Now, we’ll use Gpg4win to verify another app—Notepad++—as a real-world example.</p>
+<hr>
+<h3 id="-what-youll-need">✅ What You’ll Need</h3>
+<ul>
+<li>Gpg4win installed (includes Kleopatra)</li>
+<li>Internet access to download Notepad++ and its verification files</li>
+</ul>
+<hr>
+<h3 id="-step-1-download-notepad-portable-and-verification-files">🔽 Step 1: Download Notepad++ Portable and Verification Files</h3>
+<p>Go to the <a href="https://notepad-plus-plus.org/downloads/v8.8.5/">Notepad++ v8.8.5 download page</a> and download:</p>
+<ol>
+<li><code>npp.portable.x64.zip</code> – the portable app</li>
+<li><code>npp.portable.x64.zip.sig</code> – the GPG signature file</li>
+<li><code>nppGpgPub.asc</code> – the public key (linked on the same page)</li>
+</ol>
+<p>Place all three files in the same folder, e.g., <code>Downloads\NotepadVerify</code>.</p>
+<hr>
+<h3 id="-step-2-import-the-public-key-into-kleopatra">🔑 Step 2: Import the Public Key into Kleopatra</h3>
+<ol>
+<li>Open <strong>Kleopatra</strong> (installed with Gpg4win).</li>
+<li>Click <strong>File → Import Certificates</strong>.</li>
+<li>Select <code>nppGpgPub.asc</code>.</li>
+<li>You should see a confirmation that the key was successfully imported.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Kleopatra showing successful key import</em></p>
+<hr>
+<h3 id="-step-3-verify-the-signature">🧪 Step 3: Verify the Signature</h3>
+<ol>
+<li>In Kleopatra, go to <strong>File → Verify/Decrypt</strong>.</li>
+<li>Select <code>npp.portable.x64.zip.sig</code>.</li>
+<li>Kleopatra will automatically locate the matching ZIP file and verify it.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Kleopatra showing “Signature is valid” message</em></p>
+<hr>
+<h2 id="-what-the-result-means">🧠 What the Result Means</h2>
+<ul>
+<li>✅ <strong>“Signature is valid”</strong> means the ZIP file matches the signature and hasn’t been altered.</li>
+<li>🔒 You’ve confirmed the file’s integrity using cryptographic verification.</li>
+<li>🧑‍💻 This is a best practice before using any tool in your sandbox or recovery workflow.</li>
+</ul>
+<hr>
+<h2 id="-for-trainers-and-recovery-kits">🧰 For Trainers and Recovery Kits</h2>
+<p>This guide is ideal for:</p>
+<ul>
+<li>Teaching new users how to verify third-party software</li>
+<li>Preparing tools for secure sandbox deployment</li>
+<li>Including in recovery toolkits for offline validation</li>
+</ul>
+<hr>
+<h2 id="-whats-next">🧩 What’s Next?</h2>
+<p>In the next lesson, we’ll show how to <strong>add Notepad++ to your Windows Sandbox</strong> using a <code>.wsb</code> configuration file—so it’s ready to use in a secure, isolated environment.</p>
+<p>Want to automate this verification or bundle it with other apps? I can help you build a full sandbox toolkit.</p>
+<p>Let me know when you&rsquo;re ready to move on to the sandbox integration lesson—I’ll help you build a .wsb file and prep the folder structure.</p>
+
+
+    </main>
+  </div>
+</body>
+</html>

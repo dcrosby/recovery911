@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Windows Sandbox</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+  <div class="nav-left">
+    <span class="site-title">Recovery-911</span>
+  </div>
+  <ul class="nav-right">
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/quickstart/">Quick Start</a></li>
+    
+      <li><a href="/faqs/">FAQs</a></li>
+    
+      <li><a href="/tools/">Tools</a></li>
+    
+      <li><a href="/tutorials/">Tutorials</a></li>
+    
+      <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+  <div class="container">
+    <aside>
+      <aside class="sidebar">
+  <h2>Recovery Guide</h2>
+  <ul>
+    
+      <li>
+        <a href="/quickstart/" class="">
+          Quickstart
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/quickstart/windows_sandbox/" class="">
+          Windows Sandbox
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/faqs/" class="">
+          FAQs
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/faqs/what-is-recovery/" class="">
+          What is Recovery?
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tools/" class="">
+          Recovery Tools
+        </a>
+        <ul>
+  
+
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tutorials/" class="">
+          Tutorials
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/tutorials/safe_downloads/" class="">
+          Safe Downloads - How To
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/notepad&#43;&#43;/" class="">
+          Notepad&#43;&#43; Portable Text Editor
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/gpg4win/" class="">
+          Gpg4Win to Verify Downloads
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/kleopatra_howto/" class="">
+          Kleopatra, The Good, Bad, and Ugly
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/about/" class="">
+          About this Site
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/about/styleguide/" class="">
+          Rescue911 StyleGuide
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+  </ul>
+</aside>
+
+    </aside>
+    <main>
+      
+  <h1>Windows Sandbox</h1>
+  <p><strong>🧪 A Secure Testing Environment</strong></p>
+<p>Windows Sandbox provides a lightweight, temporary virtual environment for safely running untrusted applications or performing recovery tasks without affecting your host system.</p>
+<hr>
+<h2 id="-launching-windows-sandbox">🚀 Launching Windows Sandbox</h2>
+<p>To start the default Sandbox:</p>
+<ol>
+<li>Press <code>Start</code> and search for <strong>Windows Sandbox</strong></li>
+<li>Click to launch a clean, isolated Windows environment</li>
+</ol>
+<h3 id="default-features">Default Features</h3>
+<ul>
+<li><strong>vGPU</strong>: Enabled (unless on ARM64)</li>
+<li><strong>Networking</strong>: Enabled via Hyper-V switch</li>
+<li><strong>Clipboard</strong>: Shared with host</li>
+<li><strong>Audio Input</strong>: Enabled</li>
+<li><strong>Video Input</strong>: Disabled</li>
+<li><strong>Printer Redirection</strong>: Disabled</li>
+<li><strong>Protected Client Mode</strong>: Disabled</li>
+</ul>
+<blockquote>
+<p>⚠️ Note: Networking is enabled by default, which may expose internal resources. Use a custom <code>.wsb</code> file to disable it.</p></blockquote>
+<hr>
+<h2 id="-creating-a-custom-sandbox-configuration">⚙️ Creating a Custom Sandbox Configuration</h2>
+<p>Windows Sandbox supports <code>.wsb</code> configuration files written in XML. These allow you to customize the environment.</p>
+<h3 id="-sample-wsb-file">📝 Sample <code>.wsb</code> File</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;Configuration&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;VGpu&gt;</span>Disable<span style="color:#f92672">&lt;/VGpu&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;Networking&gt;</span>Disable<span style="color:#f92672">&lt;/Networking&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;AudioInput&gt;</span>Disable<span style="color:#f92672">&lt;/AudioInput&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;VideoInput&gt;</span>Disable<span style="color:#f92672">&lt;/VideoInput&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ProtectedClient&gt;</span>Enable<span style="color:#f92672">&lt;/ProtectedClient&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;PrinterRedirection&gt;</span>Disable<span style="color:#f92672">&lt;/PrinterRedirection&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ClipboardRedirection&gt;</span>Enable<span style="color:#f92672">&lt;/ClipboardRedirection&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;MemoryInMB&gt;</span>4096<span style="color:#f92672">&lt;/MemoryInMB&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;MappedFolders&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;MappedFolder&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;HostFolder&gt;</span>C:\RecoveryToolbox<span style="color:#f92672">&lt;/HostFolder&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;SandboxFolder&gt;</span>C:\Toolbox<span style="color:#f92672">&lt;/SandboxFolder&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;ReadOnly&gt;</span>true<span style="color:#f92672">&lt;/ReadOnly&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/MappedFolder&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/MappedFolders&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;LogonCommand&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Command&gt;</span>cmd.exe /c echo Welcome to Recovery Sandbox!<span style="color:#f92672">&lt;/Command&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/LogonCommand&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Configuration&gt;</span>
+</span></span></code></pre></div>
+
+    </main>
+  </div>
+</body>
+</html>

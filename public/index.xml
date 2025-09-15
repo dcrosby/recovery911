@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🧰&#34;Recovery-911&#34;🧰 on Recovery Toolbox</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in 🧰&#34;Recovery-911&#34;🧰 on Recovery Toolbox</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Recovery?</title>
+      <link>http://localhost:1313/faqs/what-is-recovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faqs/what-is-recovery/</guid>
+      <description>&lt;p&gt;Recovery is the process of&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Safe Downloads - How To</title>
+      <link>http://localhost:1313/tutorials/safe_downloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/safe_downloads/</guid>
+      <description>&lt;div class=&#34;toc-container&#34;&gt;&#xA;    &lt;h2&gt;Table of Contents&lt;/h2&gt;&#xA;    &lt;nav class=&#34;toc&#34;&gt;&#xA;        &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-why-this-matters&#34;&gt;📘 Why This Matters&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-what-youll-need&#34;&gt;✅ What You’ll Need&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-step-1-download-gpg4win-safely&#34;&gt;🔽 Step 1: Download Gpg4win Safely&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-step-2-open-file-properties&#34;&gt;🔍 Step 2: Open File Properties&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-step-3-inspect-the-signature&#34;&gt;🧾 Step 3: Inspect the Signature&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-what-this-means&#34;&gt;🧠 What This Means&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-whats-next&#34;&gt;🧰 What’s Next?&lt;/a&gt;&lt;/li&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#-for-trainers&#34;&gt;🧑‍🏫 For Trainers&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;    &lt;/nav&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Verify the certificate for a file downloaded from the internet&#xA;&lt;strong&gt;🛡️ Verify Software Authenticity&lt;/strong&gt; of the Gpg4win.exe download using Windows&lt;/p&gt;&#xA;&lt;h2 id=&#34;-why-this-matters&#34;&gt;📘 Why This Matters&lt;/h2&gt;&#xA;&lt;p&gt;Before using tools like Gpg4win to verify other software, you need to &lt;strong&gt;trust Gpg4win itself&lt;/strong&gt;. This guide shows you how to verify its authenticity using &lt;strong&gt;Windows&amp;rsquo; built-in digital signature check&lt;/strong&gt;, which is simple and doesn&amp;rsquo;t require any technical background.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notepad&#43;&#43; Portable Text Editor</title>
+      <link>http://localhost:1313/tutorials/notepad&#43;&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/notepad&#43;&#43;/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Safely download the portable text editor Notepad++ (no need to install)&#xA;&lt;strong&gt;🛡️ Verify Software Authenticity&lt;/strong&gt; using Gpg4win.exe download&lt;/p&gt;&#xA;&lt;p&gt;This procedure walks you through downloading the portable version of Notepad++, retrieving its GPG key and signature, and verifying it using Gpg4win (via Kleopatra). This builds on the previous Gpg4win verification lesson and sets the stage for sandbox deployment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-verifying-notepad-portable-with-gpg4win&#34;&gt;🧪 Verifying Notepad++ (Portable) with Gpg4win&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-why-this-matters&#34;&gt;📘 Why This Matters&lt;/h3&gt;&#xA;&lt;p&gt;Before adding tools like Notepad++ to your Windows Sandbox, it&amp;rsquo;s important to verify their authenticity. This guide shows how to use &lt;strong&gt;Gpg4win&lt;/strong&gt; to verify the &lt;strong&gt;portable version of Notepad++&lt;/strong&gt;, ensuring it hasn’t been tampered with.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gpg4Win to Verify Downloads</title>
+      <link>http://localhost:1313/tutorials/gpg4win/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/gpg4win/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Understand the first level of manually verifying a downloaded file.&#xA;(i.e. the Gpg4win executable).&lt;/p&gt;&#xA;&lt;h1 id=&#34;-verifying-gpg4win-manually&#34;&gt;🔐 Verifying Gpg4win Manually&lt;/h1&gt;&#xA;&lt;h2 id=&#34;this-doesn&#34;&gt;&lt;strong&gt;This doesn&amp;rsquo;t really work - needs a rewrite&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;-why-this-page-exists&#34;&gt;📘 Why This Page Exists&lt;/h2&gt;&#xA;&lt;p&gt;In the previous guide, we showed how to verify the Gpg4win installer using Windows&amp;rsquo; built-in digital signature check. Now, we’ll go one step deeper and use &lt;strong&gt;Gpg4win itself&lt;/strong&gt; to verify its own installer using &lt;strong&gt;GPG signatures&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Yes, it’s a bit meta—but it’s also a great way to teach users how GPG verification works in practice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kleopatra, The Good, Bad, and Ugly</title>
+      <link>http://localhost:1313/tutorials/kleopatra_howto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/kleopatra_howto/</guid>
+      <description>&lt;p&gt;The GPG trust model can be confusing, especially for new users who expect something more like HTTPS or code signing, where a certificate authority (CA) vouches for the software. GPG flips that model: you are the authority, which is empowering but also intimidating if no one explains it clearly.&lt;/p&gt;&#xA;&lt;p&gt;This page walks you through creating your own certificate, and shows how to certify a public key like the Notepad++ Public key (nppGpgPub.asc). It covers the “Not Certified” warning in Kleopatra, which can be very confusing. It also explains why this model exists and how it differs from CA-based trust.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows Sandbox</title>
+      <link>http://localhost:1313/quickstart/windows_sandbox/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickstart/windows_sandbox/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;🧪 A Secure Testing Environment&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Windows Sandbox provides a lightweight, temporary virtual environment for safely running untrusted applications or performing recovery tasks without affecting your host system.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-launching-windows-sandbox&#34;&gt;🚀 Launching Windows Sandbox&lt;/h2&gt;&#xA;&lt;p&gt;To start the default Sandbox:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Press &lt;code&gt;Start&lt;/code&gt; and search for &lt;strong&gt;Windows Sandbox&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Click to launch a clean, isolated Windows environment&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;default-features&#34;&gt;Default Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;vGPU&lt;/strong&gt;: Enabled (unless on ARM64)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Networking&lt;/strong&gt;: Enabled via Hyper-V switch&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clipboard&lt;/strong&gt;: Shared with host&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Audio Input&lt;/strong&gt;: Enabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Video Input&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Printer Redirection&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protected Client Mode&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Note: Networking is enabled by default, which may expose internal resources. Use a custom &lt;code&gt;.wsb&lt;/code&gt; file to disable it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rescue911 StyleGuide</title>
+      <link>http://localhost:1313/about/styleguide/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/styleguide/</guid>
+      <description>&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;. &lt;a href=&#34;https://github.com&#34;&gt;Links&lt;/a&gt; should be blue with no underlines (unless hovered over).&lt;/p&gt;&#xA;&lt;p&gt;There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.&lt;/p&gt;&#xA;&lt;p&gt;There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;There should be no margin above this first sentence.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

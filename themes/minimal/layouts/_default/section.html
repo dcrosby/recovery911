@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <section class="section-content">
+    <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    <ul>
+      {{- range .Site.Sections }}
+        {{ partial "section-tree.html" . }}
+      {{- end }}
+    </ul>
+  </section>
+{{ end }}

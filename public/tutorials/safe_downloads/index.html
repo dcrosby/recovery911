@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Safe Downloads - How To</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+  <div class="nav-left">
+    <span class="site-title">Recovery-911</span>
+  </div>
+  <ul class="nav-right">
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/quickstart/">Quick Start</a></li>
+    
+      <li><a href="/faqs/">FAQs</a></li>
+    
+      <li><a href="/tools/">Tools</a></li>
+    
+      <li><a href="/tutorials/">Tutorials</a></li>
+    
+      <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+  <div class="container">
+    <aside>
+      <aside class="sidebar">
+  <h2>Recovery Guide</h2>
+  <ul>
+    
+      <li>
+        <a href="/quickstart/" class="">
+          Quickstart
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/quickstart/windows_sandbox/" class="">
+          Windows Sandbox
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/faqs/" class="">
+          FAQs
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/faqs/what-is-recovery/" class="">
+          What is Recovery?
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tools/" class="">
+          Recovery Tools
+        </a>
+        <ul>
+  
+
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/tutorials/" class="">
+          Tutorials
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/tutorials/safe_downloads/" class="">
+          Safe Downloads - How To
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/notepad&#43;&#43;/" class="">
+          Notepad&#43;&#43; Portable Text Editor
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/gpg4win/" class="">
+          Gpg4Win to Verify Downloads
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/tutorials/kleopatra_howto/" class="">
+          Kleopatra, The Good, Bad, and Ugly
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+      <li>
+        <a href="/about/" class="">
+          About this Site
+        </a>
+        <ul>
+  
+
+  
+    
+      <li>
+        <a href="/about/styleguide/" class="">
+          Rescue911 StyleGuide
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </li>
+    
+  </ul>
+</aside>
+
+    </aside>
+    <main>
+      
+  <h1>Safe Downloads - How To</h1>
+  
+
+<div class="toc-container">
+    <h2>Table of Contents</h2>
+    <nav class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-why-this-matters">📘 Why This Matters</a></li>
+    <li><a href="#-what-youll-need">✅ What You’ll Need</a></li>
+    <li><a href="#-step-1-download-gpg4win-safely">🔽 Step 1: Download Gpg4win Safely</a></li>
+    <li><a href="#-step-2-open-file-properties">🔍 Step 2: Open File Properties</a></li>
+    <li><a href="#-step-3-inspect-the-signature">🧾 Step 3: Inspect the Signature</a></li>
+    <li><a href="#-what-this-means">🧠 What This Means</a></li>
+    <li><a href="#-whats-next">🧰 What’s Next?</a></li>
+    <li><a href="#-for-trainers">🧑‍🏫 For Trainers</a></li>
+  </ul>
+</nav>
+    </nav>
+</div>
+
+
+<p><strong>Goal</strong>: Verify the certificate for a file downloaded from the internet
+<strong>🛡️ Verify Software Authenticity</strong> of the Gpg4win.exe download using Windows</p>
+<h2 id="-why-this-matters">📘 Why This Matters</h2>
+<p>Before using tools like Gpg4win to verify other software, you need to <strong>trust Gpg4win itself</strong>. This guide shows you how to verify its authenticity using <strong>Windows&rsquo; built-in digital signature check</strong>, which is simple and doesn&rsquo;t require any technical background.</p>
+<hr>
+<h2 id="-what-youll-need">✅ What You’ll Need</h2>
+<ul>
+<li>A Windows PC</li>
+<li>The Gpg4win installer (<code>gpg4win-4.4.1.exe</code> or latest)</li>
+<li>Basic file navigation skills</li>
+</ul>
+<hr>
+<h2 id="-step-1-download-gpg4win-safely">🔽 Step 1: Download Gpg4win Safely</h2>
+<p>Go to the official Gpg4win site and download the installer:
+👉 <a href="https://gpg4win.org/thanks-for-download.html">Gpg4win Download Page</a></p>
+<p>Save the file to a known location, like your Desktop or Downloads folder.</p>
+<hr>
+<h2 id="-step-2-open-file-properties">🔍 Step 2: Open File Properties</h2>
+<ol>
+<li>Right-click the downloaded <code>.exe</code> file.</li>
+<li>Select <strong>Properties</strong>.</li>
+<li>Click the <strong>Digital Signatures</strong> tab.</li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Properties window showing &ldquo;Digital Signatures&rdquo; tab</em></p>
+<hr>
+<h2 id="-step-3-inspect-the-signature">🧾 Step 3: Inspect the Signature</h2>
+<ol>
+<li>In the list, select the signature from <strong>g10 Code GmbH</strong>.</li>
+<li>Click <strong>Details</strong>.</li>
+<li>Look for the message:<br>
+<strong>“This digital signature is OK.”</strong></li>
+</ol>
+<p>🖼️ <em>Placeholder for screenshot: Signature Details window showing “This digital signature is OK”</em></p>
+<hr>
+<h2 id="-what-this-means">🧠 What This Means</h2>
+<ul>
+<li>✅ If you see “This digital signature is OK,” Windows has verified the file using its trusted certificate authority system.</li>
+<li>🏢 The signer <strong>g10 Code GmbH</strong> is a legitimate maintainer of Gpg4win and GnuPG.</li>
+<li>🔒 This confirms the installer hasn’t been tampered with and comes from a trusted source.</li>
+</ul>
+<hr>
+<h2 id="-whats-next">🧰 What’s Next?</h2>
+<p>Now that you’ve verified Gpg4win, you can use it to validate other software (like Notepad++). In the next section, we’ll walk through how to use Gpg4win for deeper verification using GPG signatures.</p>
+<hr>
+<h2 id="-for-trainers">🧑‍🏫 For Trainers</h2>
+<p>This guide is designed for non-technical users. You can print it, include it in onboarding kits, or bundle it with sandbox recovery tools.</p>
+<p>Want to automate this check or add screenshots? Just ask—I can help you build a visual walkthrough or script it for one-click validation.</p>
+
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "Recovery Toolbox"
+theme: "minimal"
+
+outputs:
+  home: ["HTML", "RSS"]
+  section: ["HTML"]
+  page: ["HTML"]
+
+menu:
+  main:
+    - identifier: home
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: QuickStart
+      name: "Quick Start"
+      url: "/quickstart/"
+      weight: 10
+    - identifier: faqs
+      name: "FAQs"
+      url: "/faqs/"
+      weight: 20
+    - identifier: tools
+      name: "Tools"
+      url: "/tools/"
+      weight: 30
+    - identifier: tutorials
+      name: "Tutorials"
+      url: "/tutorials/"
+      weight: 40
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 50
+
+params:
+  sidebarSections:
+    - faqs
+    - tools
+    - quickstart

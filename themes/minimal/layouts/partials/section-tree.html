@@ -1,0 +1,19 @@
+<li>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ if .Sections }}
+    <ul>
+      {{ range .Sections }}
+        {{ partial "section-tree.html" . }}
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ if .Pages }}
+    <ul>
+      {{ range .Pages }}
+        {{ if not .IsSection }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ end }}
+</li>

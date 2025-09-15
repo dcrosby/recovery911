@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sandbox on Recovery Toolbox</title>
+    <link>http://localhost:1313/tags/sandbox/</link>
+    <description>Recent content in Sandbox on Recovery Toolbox</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sandbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Sandbox</title>
+      <link>http://localhost:1313/quickstart/windows_sandbox/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickstart/windows_sandbox/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;🧪 A Secure Testing Environment&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Windows Sandbox provides a lightweight, temporary virtual environment for safely running untrusted applications or performing recovery tasks without affecting your host system.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-launching-windows-sandbox&#34;&gt;🚀 Launching Windows Sandbox&lt;/h2&gt;&#xA;&lt;p&gt;To start the default Sandbox:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Press &lt;code&gt;Start&lt;/code&gt; and search for &lt;strong&gt;Windows Sandbox&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Click to launch a clean, isolated Windows environment&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;default-features&#34;&gt;Default Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;vGPU&lt;/strong&gt;: Enabled (unless on ARM64)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Networking&lt;/strong&gt;: Enabled via Hyper-V switch&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clipboard&lt;/strong&gt;: Shared with host&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Audio Input&lt;/strong&gt;: Enabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Video Input&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Printer Redirection&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protected Client Mode&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Note: Networking is enabled by default, which may expose internal resources. Use a custom &lt;code&gt;.wsb&lt;/code&gt; file to disable it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

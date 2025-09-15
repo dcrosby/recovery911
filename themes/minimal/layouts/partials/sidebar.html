@@ -1,0 +1,13 @@
+<aside class="sidebar">
+  <h2>Recovery Guide</h2>
+  <ul>
+    {{ range sort .Site.Sections "Weight" }}
+      <li>
+        <a href="{{ .RelPermalink }}" class="{{ if eq .RelPermalink $.RelPermalink }}active{{ end }}">
+          {{ .Title }}
+        </a>
+        {{ partial "sidebar-tree.html" . }}
+      </li>
+    {{ end }}
+  </ul>
+</aside>

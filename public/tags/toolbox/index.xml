@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Toolbox on Recovery Toolbox</title>
+    <link>http://localhost:1313/tags/toolbox/</link>
+    <description>Recent content in Toolbox on Recovery Toolbox</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/toolbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quickstart</title>
+      <link>http://localhost:1313/quickstart/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickstart/</guid>
+      <description>&lt;h1 id=&#34;-recovery-toolbox-quickstart&#34;&gt;🧰 Recovery Toolbox Quickstart&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the Recovery-911 Toolbox! This guide will help you get started quickly with the essential tools and configurations.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-navigation&#34;&gt;🧭 Navigation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/quickstart/&#34;&gt;Quick Start&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/faqs/&#34;&gt;FAQs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/tools/&#34;&gt;Tools&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Setting up a Safe Environment for Prevention and Recovery!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Recovery involves some amount of preparation &lt;em&gt;&lt;strong&gt;before&lt;/strong&gt;&lt;/em&gt; the crash&amp;hellip;&#xA;Better to take a few minutes now to do a little prep than be forced to do a complete Windows reinstall later&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

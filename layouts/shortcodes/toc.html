@@ -1,0 +1,9 @@
+{{/* Shortcode: toc.html */}}
+{{ if .Page.TableOfContents }}
+<div class="toc-container">
+    <h2>Table of Contents</h2>
+    <nav class="toc">
+        {{ .Page.TableOfContents | safeHTML }}
+    </nav>
+</div>
+{{ end }}

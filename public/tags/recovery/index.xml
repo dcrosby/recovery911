@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recovery on Recovery Toolbox</title>
+    <link>http://localhost:1313/tags/recovery/</link>
+    <description>Recent content in Recovery on Recovery Toolbox</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/recovery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quickstart</title>
+      <link>http://localhost:1313/quickstart/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickstart/</guid>
+      <description>&lt;h1 id=&#34;-recovery-toolbox-quickstart&#34;&gt;🧰 Recovery Toolbox Quickstart&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the Recovery-911 Toolbox! This guide will help you get started quickly with the essential tools and configurations.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-navigation&#34;&gt;🧭 Navigation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/quickstart/&#34;&gt;Quick Start&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/faqs/&#34;&gt;FAQs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/tools/&#34;&gt;Tools&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Setting up a Safe Environment for Prevention and Recovery!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Recovery involves some amount of preparation &lt;em&gt;&lt;strong&gt;before&lt;/strong&gt;&lt;/em&gt; the crash&amp;hellip;&#xA;Better to take a few minutes now to do a little prep than be forced to do a complete Windows reinstall later&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows Sandbox</title>
+      <link>http://localhost:1313/quickstart/windows_sandbox/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quickstart/windows_sandbox/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;🧪 A Secure Testing Environment&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Windows Sandbox provides a lightweight, temporary virtual environment for safely running untrusted applications or performing recovery tasks without affecting your host system.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-launching-windows-sandbox&#34;&gt;🚀 Launching Windows Sandbox&lt;/h2&gt;&#xA;&lt;p&gt;To start the default Sandbox:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Press &lt;code&gt;Start&lt;/code&gt; and search for &lt;strong&gt;Windows Sandbox&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Click to launch a clean, isolated Windows environment&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;default-features&#34;&gt;Default Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;vGPU&lt;/strong&gt;: Enabled (unless on ARM64)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Networking&lt;/strong&gt;: Enabled via Hyper-V switch&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clipboard&lt;/strong&gt;: Shared with host&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Audio Input&lt;/strong&gt;: Enabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Video Input&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Printer Redirection&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protected Client Mode&lt;/strong&gt;: Disabled&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Note: Networking is enabled by default, which may expose internal resources. Use a custom &lt;code&gt;.wsb&lt;/code&gt; file to disable it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
